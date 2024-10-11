@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav ul li a, 
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+header{
+    background-color: rgb(41, 41, 39);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.logo{
+    font-family: "Gang of Three", sans-serif;
+    letter-spacing: 5px;
+    color: white;
+}
+
+nav .logo{
+    text-shadow: 10px 10px 10px black;
+}
+
+nav .logo h3{
+    display: inline;
+    margin-left: 10px;
+}
+
+.primeira-letra{
+    color: rgb(248, 48, 48);
+}
+
+nav a{
+    text-decoration: none;
+}
+
+header ul{
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+}
+
+
+header ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 2px;
+    transition: 0.4s;
+}
+
+header ul li a:hover{
+    border-bottom: 1px solid white;
+}
+
+.pesquisa{
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.pesquisa i{
+    color: black;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.pesquisa input{
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 15px;
+    outline: none;
+    width: 120px;
+    transition: 1s;
+}
+
+.pesquisa input:focus{
+    width: 200px;
+}
+
+main{
+    background-image: url("../img/background-image.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+main h1{
+    padding: 20px 50px;
+    font-family: "Gang of Three", sans-serif;
+    letter-spacing: 5px;
+    text-align: center;
+    text-shadow: 10px 10px 10px black;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    padding: 10px;
+    background-color: white;
+    gap: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.card h1{
+    font-family: "Gang of Three", sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    text-shadow: none;
+}
+
+.card p{
+    font-size: 15px;
+}
+
+.card a{
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.card button{
+    width: 450px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    outline: none;
+    background-color: rgb(248, 48, 48);
+    color: white;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.card button:hover{
+    border: 1px solid rgb(248, 48, 48);
+    background-color: white;
+    color: rgb(248, 48, 48);
+}
+
+.card img{
+    z-index: 1;
+    border-radius: 20px;
+    margin-right: 20px;
+    width: 500px;
+    height: 375px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.card img:hover{
+    scale: 1.1;
+}
+
+.termos-botao{
+    margin-top: 50px;
+}
+
+.termos{
+    display: flex;
+    font-size: 0.8rem;
+    margin-right: 15px;
+}
+
+.termos label{
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.termos a{
+    text-decoration: underline;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    margin-bottom: 20px;
+}
+
+form p{
+    margin-right: 38px;
+    margin-bottom: 5px;
+    animation-name: piscando;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes piscando{
+    0%{
+        color: black;
+        font-weight: 550;
+    }
+
+    50%{
+        color: rgb(248, 48, 48);
+        font-weight: 550;
+    }
+
+    100%{
+        color: black;
+        font-weight: 550;
+    }
+}
+
+form input{
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+
+
+
+.preco{
+    font-weight: bold;
+    color: rgb(248, 48, 48);
+}
+
+.preco-antigo{
+    margin-right: 10px;
+    color: #aca6a6;
+    font-weight: lighter;
+    text-decoration:line-through;
+}
+
+.promocoes input{
+    width: 191px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    outline: none;
+    background-color: rgb(248, 48, 48);
+    color: white;
+    transition: 0.4s;
+    cursor: pointer;
+    
+}
+
+.promocoes input:hover{
+    border: 1px solid rgb(248, 48, 48);
+    background-color: white;
+    color: rgb(248, 48, 48);
+}
