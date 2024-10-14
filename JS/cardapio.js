@@ -2,7 +2,6 @@ const divPecas = document.getElementById('pecas');
 const divKits = document.getElementById('kits');
 const listaProdutos = document.getElementById('produtos');
 const telaCarregamento = document.getElementById('telaCarregamento');
-
 const produtos = [];
 
 
@@ -40,12 +39,12 @@ const definirDadosProdutos = (produto) => {
     img.src = `${produto.imagem}`;
     const titulo = document.createElement('h1');
     const link = document.createElement('a');
-    link.href = '../detalhes.html';
-    const button = document.createElement('button');
+    link.href = `./detalhes.html?produtoId=${produto.id}`;
     titulo.innerText = produto.produto;
+    const button = document.createElement('button');
     button.innerText = 'Ver Detalhes';
     link.appendChild(button);
-        
+    
 
     div.appendChild(img);
     div.appendChild(titulo);

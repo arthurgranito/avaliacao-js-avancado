@@ -38,32 +38,12 @@ nav .logo h3{
     margin-left: 10px;
 }
 
-.primeira-letra{
+.red{
     color: rgb(248, 48, 48);
 }
 
 nav a{
     text-decoration: none;
-}
-
-header ul{
-    display: flex;
-    list-style-type: none;
-    gap: 30px;
-}
-
-
-header ul li a{
-    text-decoration: none;
-    color: white;
-    font-size: 1.1rem;
-    border-bottom: 1px solid transparent;
-    padding-bottom: 2px;
-    transition: 0.4s;
-}
-
-header ul li a:hover{
-    border-bottom: 1px solid white;
 }
 
 .pesquisa{
@@ -100,186 +80,147 @@ main{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    color: white;
+    min-height: calc(100vh - 90px);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
 }
 
 main h1{
-    padding: 20px 50px;
     font-family: "Gang of Three", sans-serif;
     letter-spacing: 5px;
-    text-align: center;
     text-shadow: 10px 10px 10px black;
-}
-
-.cards{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 20px;
-    flex-wrap: wrap;
+    color: black;
+    margin-bottom: 20px;
 }
 
 .card{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: black;
-    padding: 10px;
-    background-color: white;
-    gap: 10px;
     border-radius: 20px;
-    overflow: hidden;
-    max-width: 1000px;
-    width: 100%;
-}
-
-.card h1{
-    font-family: "Gang of Three", sans-serif;
-    letter-spacing: 2px;
-    text-align: center;
-    text-shadow: none;
-}
-
-.card p{
-    font-size: 15px;
-}
-
-.card a{
-    text-decoration: none;
-    margin-bottom: 10px;
-}
-
-.card button{
-    width: 450px;
-    height: 40px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50px;
-    border: 1px solid transparent;
-    outline: none;
-    background-color: rgb(248, 48, 48);
-    color: white;
-    transition: 0.4s;
-    cursor: pointer;
-}
-
-.card button:hover{
-    border: 1px solid rgb(248, 48, 48);
+    gap: 20px;
+    height: 490px;
+    padding: 20px;
     background-color: white;
-    color: rgb(248, 48, 48);
 }
 
 .card img{
-    z-index: 1;
-    border-radius: 20px;
-    margin-right: 20px;
-    width: 500px;
-    height: 375px;
-    transition: 0.4s;
-    cursor: pointer;
+    width: 600px;
+    height: 450px;
+    border-radius: 10px;
 }
 
-.card img:hover{
-    scale: 1.1;
-}
-
-.termos-botao{
-    margin-top: 50px;
-}
-
-.termos{
-    display: flex;
-    font-size: 0.8rem;
-    margin-right: 15px;
-}
-
-.termos label{
-    display: flex;
-    align-items: center;
-    margin-left: 5px;
-}
-
-.termos a{
-    text-decoration: underline;
-    display: flex;
-    margin-top: 10px;
-    margin-left: 5px;
+.preco{
+    margin-top: 20px;
+    font-weight: 600;
+    color: rgb(248, 48, 48);
+    font-size: 1.1rem;
 }
 
 form{
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    align-items: end;
-    margin-bottom: 20px;
+    width: 230px;
+    gap: 10px;   
 }
 
-form p{
-    margin-right: 38px;
-    margin-bottom: 5px;
-    animation-name: piscando;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-
-@keyframes piscando{
-    0%{
-        color: black;
-        font-weight: 550;
-    }
-
-    50%{
-        color: rgb(248, 48, 48);
-        font-weight: 550;
-    }
-
-    100%{
-        color: black;
-        font-weight: 550;
-    }
-}
-
-form input{
+form input[type="text"]{
     height: 40px;
     padding: 10px;
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid black;
     border-radius: 10px;
-    border: 1px solid #ddd;
+    margin-top: -5px;
+}
+
+form button{
+    height: 30px;
+    border-radius: 10px;
     outline: none;
+    border: none;
+    background-color: rgb(48, 248, 48);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all ease 0.5s;
 }
 
-
-
-.preco{
-    font-weight: bold;
-    color: rgb(248, 48, 48);
+form button:hover{
+    background-color: rgb(27, 216, 27);
 }
 
-.preco-antigo{
-    margin-right: 10px;
-    color: #aca6a6;
-    font-weight: lighter;
-    text-decoration:line-through;
+.dados{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
 }
 
-.promocoes input{
-    width: 191px;
-    height: 40px;
+.form-comprar{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50px;
-    border: 1px solid transparent;
+    grid-row: 4;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.comprar{
+    height: 40px;
+    
+    border: none;
     outline: none;
+    font-size: 1rem;
+    font-weight: 600;
     background-color: rgb(248, 48, 48);
     color: white;
-    transition: 0.4s;
+    border-radius: 10px;
     cursor: pointer;
-    
+    transition: all ease 0.5s;
 }
 
-.promocoes input:hover{
-    border: 1px solid rgb(248, 48, 48);
-    background-color: white;
-    color: rgb(248, 48, 48);
+.comprar:hover{
+    background-color: rgb(212, 39, 39);
+}
+
+label{
+    margin-left: 5px;
+}
+
+.tela-carregamento{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.bolinha{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 12px solid rgb(248, 48, 48);
+    background-color: transparent;
+    border-top: 12px solid transparent;
+    display: block;
+    animation: carregar 1s linear infinite;
+}
+
+@keyframes carregar {
+    from{
+        transform: rotate(0);
+    } to{
+        transform: rotate(360deg);
+    }
+}
+
+.erro{
+    font-size: 12px;
+    text-align: center;
+    display: none;
+    font-weight: 600;
+    color: rgb(212, 39, 39);
 }
