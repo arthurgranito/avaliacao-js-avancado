@@ -58,7 +58,8 @@ const mostrarCard = (produto) => {
     checkbox.id = 'checkbox';
 
     const labelCheckbox = document.createElement('label');
-    labelCheckbox.innerHTML = `Aceito os <a href="#">Termos de Uso</a>`;
+    labelCheckbox.innerHTML = `Aceito os <a href="#" id="a">Termos de Uso</a>`;
+    labelCheckbox.id = 'label';
 
     const pErro = document.createElement('p');
     pErro.className = 'erro';
