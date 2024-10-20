@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grajapa | Arthur Granito</title>
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="fontes/fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/indexResponsive.css">
+</head>
+<body>
+    <header>
+        <h1>Grajapa</h1>
+        <button class="menu" id="abrirMenu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        
+        <button class="menu hidden" id="fecharMenu">
+            <i class="fa-solid fa-x"></i>
+        </button>
+        <div class="buttons">
+            <button>Entrar</button>
+            <button>Cadastrar</button>
+        </div>
+    </header>
+
+    <div class="aba-menu-lateral hidden" id="aba-menu-lateral">
+        <div class="menu-lateral" id="menu-lateral">
+            <button>Entrar</button>
+            <button>Cadastrar</button>
+        </div>
+    </div>
+
+    <div class="alerta">
+        <h2>Promoções acabam em: <span class="red" id="timer">00:00:00</span></h3>
+    </div>
+
+    <main>
+        <div>
+            <h1>Grajapa</h1>
+            <p>O melhor restaurante japonês de Teresópolis!</p>
+        </div>
+        <a href="cardapio.html">
+            <button>
+                Ver Cardápio
+            </button>
+        </a>
+    </main>
+    <script src="JS/index.js"></script>
+</body>
+</html>

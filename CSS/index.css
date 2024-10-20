@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gang of Three", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-image: url("../img/background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #313131;
+  height: 60px;
+  color: white;
+}
+header .menu {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 1.5rem;
+}
+header h1 {
+  text-shadow: 5px 5px 5px black;
+}
+header .buttons {
+  display: none;
+}
+
+.alerta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  padding: 10px;
+  background-color: rgb(235, 235, 42);
+  color: #313131;
+  font-size: 12.4px;
+}
+.alerta .red {
+  color: rgb(250, 43, 43);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100% - 100px);
+  flex-direction: column;
+  color: white;
+  text-shadow: 10px 10px 10px black;
+}
+main h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+main p{
+  text-align: center;
+}
+main div {
+  margin-bottom: 20px;
+}
+main button {
+  height: 40px;
+  width: 150px;
+  font-size: 1rem;
+  font-size: 600;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background-color: rgb(226, 37, 37);
+  color: white;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+main button:hover {
+  background-color: rgb(168, 21, 21);
+}
+
+.aba-menu-lateral {
+  height: calc(100vh - 60px);
+  width: 100vw;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+}
+
+.menu-lateral {
+  width: 50%;
+  display: flex;
+  background-color: #313131;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  right: 0;
+  transform: translateX(100%);
+  height: 100%;
+  justify-content: center;
+  padding: 20px;
+}
+.menu-lateral button {
+  height: 40px;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background-color: rgb(240, 43, 43);
+  color: white;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+.menu-lateral button:hover {
+  background-color: rgb(201, 19, 19);
+}
+
+.hidden {
+  display: none;
+}
+
+.abrir {
+  transform: translateX(0);
+}
+
+@media (min-width: 1024px){
+  header{
+      height: 85px;
+      padding: 20px;
+  }
+  header h1{
+      font-size: 2.3rem;
+  }
+  .alerta{
+      height: 80px;
+      font-size: 1.4rem;
+  }
+  main{
+      height: calc(100vh - 170px);
+  }
+  main h1{
+      font-size: 2.5rem;
+  }
+  main p{
+      font-size: 1.4rem;
+  }
+  main button{
+      width: 250px;
+  }
+  .menu{
+      display: none;
+  }
+  header .buttons{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+  }
+  header .buttons button{
+      height: 40px;
+      width: 100px;
+      font-size: 1rem;
+      border-radius: 10px;
+      outline: none;
+      border: none;
+      color: white;
+      background-color: rgb(241, 39, 39);
+      cursor: pointer;
+      transition: all ease 0.5s;
+  }
+  header .buttons button:hover{
+      background-color: rgb(204, 22, 22);
+  }
+}

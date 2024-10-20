@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grajapa | Arthur Granito</title>
+    <link rel="stylesheet" href="CSS/cardapio.css">
+    <link rel="stylesheet" href="fontes/fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <h1>Grajapa</h1>
+        </a>
+        <button class="menu" id="abrirMenu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <button class="menu hidden" id="fecharMenu">
+            <i class="fa-solid fa-x"></i>
+        </button>
+        <div class="buttons">
+            <button>Entrar</button>
+            <button>Cadastrar</button>
+        </div>
+    </header>
+
+    <div class="aba-menu-lateral hidden" id="aba-menu-lateral">
+        <div class="menu-lateral" id="menu-lateral">
+            <button>Entrar</button>
+            <button>Cadastrar</button>
+        </div>
+    </div>
+
+    <main>
+        <h1 class="titulo">Cardápio</h1>
+        <div class="cards" id="cards">
+
+        </div>
+    </main>
+
+    <div class="tela-carregamento" id="telaCarregamento">
+        <div class="bolinha">
+
+        </div>
+    </div>
+
+
+    <script src="JS/cardapio.js"></script>
+</body>
+
+</html>
